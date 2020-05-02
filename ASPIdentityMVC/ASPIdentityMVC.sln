@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPIdentityMVC", "ASPIdentityMVC\ASPIdentityMVC.csproj", "{FB555AB8-9ADD-4329-9697-C0769702A9DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPIdentityMVC", "ASPIdentityMVC\ASPIdentityMVC.csproj", "{5165F24E-A581-4B5A-922E-724E03BD09DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB555AB8-9ADD-4329-9697-C0769702A9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB555AB8-9ADD-4329-9697-C0769702A9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB555AB8-9ADD-4329-9697-C0769702A9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB555AB8-9ADD-4329-9697-C0769702A9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5165F24E-A581-4B5A-922E-724E03BD09DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5165F24E-A581-4B5A-922E-724E03BD09DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5165F24E-A581-4B5A-922E-724E03BD09DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5165F24E-A581-4B5A-922E-724E03BD09DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {13F67A63-0364-414D-A7C5-22EEE276C168}
+		SolutionGuid = {AF37DC58-4C75-404B-89EF-048332855412}
 	EndGlobalSection
 EndGlobal
