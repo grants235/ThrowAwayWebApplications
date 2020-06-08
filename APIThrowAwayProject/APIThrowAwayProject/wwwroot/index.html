@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <title>To-do CRUD</title>
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>To-do CRUD</h1>
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New to-do">
-        <input type="submit" value="Add">
-    </form>
+<body style="margin-left:20px;">
+    <h1 style="text-align:center;">To-do CRUD</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                <h4>New ToDo</h4>
+                <div class="form-group form-inline">
+                    <input type="text" id="add-name" class="form-control" placeholder="New to-do" />
+                    <input type="submit" value="Add" class="btn btn-primary" style="margin:10px;" />
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div id="editForm">
-        <h3>Edit</h3>
+        <h4>Edit</h4>
         <form action="javascript:void(0);" onsubmit="updateItem()">
-            <input type="hidden" id="edit-id">
-            <input type="checkbox" id="edit-isComplete">
-            <input type="text" id="edit-name">
-            <input type="submit" value="Save">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+            <div class="form-group form-inline">
+                <input type="hidden" id="edit-id">
+                <input type="checkbox" id="edit-isComplete" class="form-check-input form-check-input-lg">
+                <input type="text" id="edit-name" class="form-control">
+                <input type="submit" value="Update" class="btn btn-primary" style="margin:10px;">
+                <a onclick="closeInput()" class="btn btn-danger" aria-label="Close" style="color:white;">Cancel</a>
+            </div>
         </form>
     </div>
 
     <p id="counter"></p>
 
-    <table>
-        <tr>
-            <th>Is Complete?</th>
+    <table class="table table-striped" style="width:50%;">
+        <tr class="table-light">
+            <th>Is Completed?</th>
             <th>Name</th>
-            <th></th>
-            <th></th>
+            <th>Actions</th>
         </tr>
         <tbody id="todos"></tbody>
     </table>

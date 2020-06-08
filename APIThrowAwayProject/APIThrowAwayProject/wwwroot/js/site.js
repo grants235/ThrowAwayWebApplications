@@ -100,10 +100,13 @@ function _displayItems(data) {
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
         editButton.setAttribute('onclick', `displayEditForm(${item.id})`);
+        editButton.className = "btn btn-secondary";
 
         let deleteButton = button.cloneNode(false);
         deleteButton.innerText = 'Delete';
         deleteButton.setAttribute('onclick', `deleteItem(${item.id})`);
+        deleteButton.className = "btn btn-danger";
+        deleteButton.style = "margin-left:10px";
 
         let tr = tBody.insertRow();
 
@@ -116,9 +119,7 @@ function _displayItems(data) {
 
         let td3 = tr.insertCell(2);
         td3.appendChild(editButton);
-
-        let td4 = tr.insertCell(3);
-        td4.appendChild(deleteButton);
+        td3.appendChild(deleteButton);
     });
 
     todos = data;
